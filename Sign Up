@@ -6,13 +6,13 @@
 <body>
 <h2>Create new account</h2>
 <form>
-<input type="text" placeholder="First name" />
-<input type ="text" placeholder="Last name" />
-<input type="date" max="2002-01-01" />
-<input type="text" placeholder="Mobile No." />
-<input type="email" placeholder="Email address" />
-<input type="password" placeholder="Password" />
-<input type="password" placeholder="Confirm Password" />
+<input type="text" placeholder="First name" required pattern="[a-zA-Z]+" title="Name should contain only letters" />
+<input type ="text" placeholder="Last name" pattern="[a-zA-Z]+" title="Name should contain only letters" />
+<input type="date" max="2002-01-01" required />
+<input type="text" placeholder="Mobile No." pattern="\d{10}" />
+<input type="email" placeholder="Email address" required />
+<input type="password" placeholder="Password" required pattern=".{8,12}" title="Password must be between 8 and 12 characters" />
+<input type="password" placeholder="Confirm Password" required />
 <button type="reset">Clear</button>
 <input type="submit" value="Done" />
 </form>
