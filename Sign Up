@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign Up - New Account</title>
+</head>
+<body>
+<h2>Create new account</h2>
+<form>
+<input type="text" placeholder="First name" />
+<input type ="text" placeholder="Last name" />
+<input type="date" max="2002-01-01" />
+<input type="text" placeholder="Mobile No." />
+<input type="email" placeholder="Email address" />
+<input type="password" placeholder="Password" />
+<input type="password" placeholder="Confirm Password" />
+<button type="reset">Clear</button>
+<input type="submit" value="Done" />
+</form>
+</body>
+</html>
